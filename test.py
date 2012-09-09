@@ -7,3 +7,4 @@ class SmokeTest(unittest.TestCase):
         driver = webdriver.Chrome(executable_path=os.path.abspath('./chromedriver_linux32'))
         driver.get('http://www.google.com')
         self.assertEquals('Google', driver.title)
+        print('DWH: Page source: %s' % driver.page_source)
